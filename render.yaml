@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: n8n-formularios
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: true
+      - key: N8N_BASIC_AUTH_USER
+        value: admin
+      - key: N8N_BASIC_AUTH_PASSWORD
+        generateValue: true
+      - key: N8N_HOST
+        value: https://n8n-formularios.onrender.com
+      - key: WEBHOOK_URL
+        value: https://n8n-formularios.onrender.com/
+      - key: N8N_ENCRYPTION_KEY
+        generateValue: true
