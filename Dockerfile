@@ -3,4 +3,4 @@ USER root
 RUN apk add --no-cache --virtual .gyp python3 make g++
 USER node
 EXPOSE 5678
-CMD ["n8n"]
+CMD ["npx", "n8n"]
