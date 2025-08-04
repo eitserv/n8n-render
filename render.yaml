@@ -21,3 +21,5 @@ services:
         generateValue: true
       - key: N8N_PROTOCOL
         value: https
+      - key: N8N_CORS_ORIGINS
+        value: https://singular-frangipane-df8398.netlify.app
